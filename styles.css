@@ -1,0 +1,122 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Outfit', sans-serif;
+   background-color: hsl(217, 54%, 11%); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   padding: 20px;
+}
+
+
+.card {
+   background-color: hsl(216, 50%, 16%); 
+   border-radius: 15px;
+   padding: 20px;
+   width: 100%;
+   max-width: 350px; 
+   text-align: center;
+   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.card-image img {
+   width: 100%;
+   display: block;
+}
+
+h1 {
+   color: hsl(0, 0%, 100%); 
+   font-size: 1.5rem;
+   font-weight: 600; 
+   margin-top: 20px;
+}
+
+p {
+   color: hsl(215, 51%, 70%); 
+   font-size: 18px; 
+   font-weight: 300;
+   margin: 15px 0;
+}
+
+.card-details {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px 0;
+}
+
+.price, .time-left {
+   display: flex;
+   align-items: center;
+   color: hsl(0, 0%, 100%); 
+}
+
+.price img, .time-left img {
+   margin-right: 8px;
+}
+
+.price span {
+   font-weight: 600; 
+   color: hsl(178, 100%, 50%); 
+}
+
+.time-left span {
+   font-weight: 400;
+   color: hsl(215, 51%, 70%); 
+}
+
+.creator {
+   display: flex;
+   align-items: center;
+   color: hsl(0, 0%, 100%);
+   margin-top: 20px;
+}
+
+.creator img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   margin-right: 10px;
+}
+
+.creator p {
+   font-weight: 300;
+}
+
+.creator span {
+   font-weight: 600;
+   color: hsl(178, 100%, 50%); 
+}
+
+@media (min-width: 1440px) {
+   .card {
+      max-width: 350px;
+   }
+}
+
+@media (max-width: 375px) {
+   .card {
+      width: 100%; 
+      padding: 15px;
+   }
+
+   h1 {
+      font-size: 1.25rem; 
+   }
+
+   p {
+      font-size: 16px;
+   }
+}
